@@ -1,0 +1,73 @@
+open thispatcherfolder "C:/Program Files/Cycling '74/Max 8/resources/externals/jitter"
+include E:/Dropbox/audio/git/spacetension/patch/2ChanMix.maxpat
+include E:/Users/rich/Documents/Max 8/Packages/cv.jit/patchers/cv.jit.blobs.centroids.draw.maxpat
+include E:/Dropbox/audio/git/spacetension/patch/midicontrols.maxpat
+include mixer.channel.basic.stereo.maxpat/mixer.channel.basic.stereo.maxpat
+include E:/Users/rich/Documents/Max 8/Packages/mixer-max-package-master/patchers/channelstrip/mixer.mute.maxpat
+include mixer.pan.stereo.maxpat/mixer.pan.stereo.maxpat
+include E:/Dropbox/audio/git/spacetension/patch/notemaker.maxpat
+include E:/Dropbox/audio/git/spacetension/patch/timeguts.maxpat
+include E:/Dropbox/audio/git/spacetension/patch/videoguts.maxpat
+include E:/Dropbox/audio/git/spacetension/patch/vstmake.maxpat
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/attrui.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/autopattr.mxe64                      
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/button.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/comment.mxe64                        
+include E:/Users/rich/Documents/Max 8/Packages/cv.jit/externals/Object/cv.jit.blobs.centroids.mxe64
+include E:/Users/rich/Documents/Max 8/Packages/cv.jit/externals/Object/cv.jit.label.mxe64
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/deferlow.mxe64                       
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/dial.mxe64                           
+include C:/Program Files/Cycling '74/Max 8/resources/externals/msp/Object/ezdac~.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/hover.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/iter.mxe64                           
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.displays.mxe64                   
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.dx.grab.mxe64                    
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.iter.mxe64                       
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.lcd.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.matrixinfo.mxe64                 
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.movie.mxe64                      
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.mxform2d.mxe64                   
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.pass.mxe64                       
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.pwindow.mxe64                    
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.rgb2luma.mxe64                   
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.slide.mxe64                      
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.vcr.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/jitter/Object/jit.window.mxe64                     
+include C:/Program Files/Cycling '74/Max 8/resources/externals/msp/Object/levelmeter~.mxe64                    
+include C:/Program Files/Cycling '74/Max 8/resources/externals/msp/Object/line~.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/m4l/Object/live.gain~.mxe64                     
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/loadmess.mxe64                       
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/makenote.mxe64                       
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/matrixctrl.mxe64                     
+include C:/Program Files/Cycling '74/Max 8/resources/externals/msp/Object/matrix~.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/message.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/metro.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/midiinfo.mxe64                       
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/modifiers.mxe64                      
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/mousestate.mxe64                     
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/mtof.mxe64                           
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/number.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/onebang.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/pak.mxe64                            
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/panel.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/patcherargs.mxe64                    
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/pattrforward.mxe64                   
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/playbar.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/poly.mxe64                           
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/prepend.mxe64                        
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/pv.mxe64                             
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/radiogroup.mxe64                     
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/rminus.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/scale.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/slider.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/sqrt.mxe64                           
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/itable.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/textbutton.mxe64                     
+include C:/Program Files/Cycling '74/Max 8/resources/externals/msp/Object/times~.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/toggle.mxe64                         
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/umenu.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/vexpr.mxe64                          
+include C:/Program Files/Cycling '74/Max 8/resources/externals/msp/Object/vst~.mxe64                           
+include C:/Program Files/Cycling '74/Max 8/resources/externals/max/Object/zmap.mxe64                           
+include E:/Dropbox/audio/Max-MSP/vst-max-64/Crystal.dll
+folder C:/VST/synths/CrystalPatchBanksfolder C:/VST/synths/CrystalSoundFontsinclude E:/Dropbox/audio/Max-MSP/vst-max-64/helm/helm64.dll
